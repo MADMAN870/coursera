@@ -1,25 +1,12 @@
-# Variables
-SCRIPT = guessinggame.sh
-README = README.md
+# Guessing Game Project
+This project was created as part of a programming exercise.
 
-# Default target
-all: $(README)
+## Date and Time
+```
+Thu Jan  9 02:42:26 PM +01 2025
+```
 
-# Rule to create README.md
-$(README): $(SCRIPT)
-	echo "# Guessing Game Project" > $(README)
-	echo "This project was created as part of a programming exercise." >> $(README)
-	echo "" >> $(README)
-	echo "## Date and Time" >> $(README)
-	echo "\`\`\`" >> $(README)
-	date >> $(README)
-	echo "\`\`\`" >> $(README)
-	echo "" >> $(README)
-	echo "## Lines of Code in guessinggame.sh" >> $(README)
-	echo "\`\`\`" >> $(README)
-	wc -l < $(SCRIPT) >> $(README)
-	echo "\`\`\`" >> $(README)
-
-# Clean up
-clean:
-	rm -f $(README)
+## Lines of Code in guessinggame.sh
+```
+27
+```
